@@ -1,4 +1,4 @@
-import styles from './mainpage.module.css';
+import styles from './Mainpage.module.css';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import logo from "../../icons/header_logo.png";
