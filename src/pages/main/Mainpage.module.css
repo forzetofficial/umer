@@ -519,7 +519,7 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
 }
 
 .main_btn_img_siblings {
-    background-image: url('http://xn--h1ahbcdf.xn--p1ai/site/img/relations.svg');
+    background-image: url('../../icons/relations.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #FDC689;

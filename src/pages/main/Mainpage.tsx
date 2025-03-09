@@ -8,6 +8,8 @@ import people from "../../icons/img_3.png";
 import slide from "../../icons/slide-down-arrow.svg";
 import foto from "../../icons/OSJMqJS5GyYhn2Qg4mxT6O69obTlH7.png";
 import down from "../../icons/down-arrow.svg";
+import candle from "../../icons/candle.png";
+
 
 export function MainPage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -153,7 +155,7 @@ export function MainPage() {
                                         </h4>
                                         <div className={styles.info}>
                                             <div className={styles.memory}>
-                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <img src={candle}></img>
                                                 <p>25</p>
                                             </div>
                                         </div>
@@ -184,7 +186,7 @@ export function MainPage() {
                                         </h4>
                                         <div className={styles.info}>
                                             <div className={styles.memory}>
-                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <img src={candle}></img>
                                                 <p>25</p>
                                             </div>
                                         </div>
@@ -215,7 +217,7 @@ export function MainPage() {
                                         </h4>
                                         <div className={styles.info}>
                                             <div className={styles.memory}>
-                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <img src={candle}></img>
                                                 <p>25</p>
                                             </div>
                                         </div>
@@ -246,7 +248,7 @@ export function MainPage() {
                                         </h4>
                                         <div className={styles.info}>
                                             <div className={styles.memory}>
-                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <img src={candle}></img>
                                                 <p>25</p>
                                             </div>
                                         </div>
@@ -277,7 +279,7 @@ export function MainPage() {
                                         </h4>
                                         <div className={styles.info}>
                                             <div className={styles.memory}>
-                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <img src={candle}></img>
                                                 <p>25</p>
                                             </div>
                                         </div>
