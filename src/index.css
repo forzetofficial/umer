@@ -141,3 +141,13 @@
     font-family: muller_light;
     src: url('../src/fonts/FontfabricMullerLight.otf');
 }
+
+@font-face {
+    font-family: muller_med;
+    src: url('../src/fonts/FontfabricMullerMedium.otf');
+}
+
+@font-face {
+    font-family: muller_extrabold;
+    src: url('../src/fonts/FontfabricMullerExtraBold.otf');
+}

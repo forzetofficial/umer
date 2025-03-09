@@ -1007,3 +1007,408 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
     transform: translate(-50%, 0%);
     z-index: 99;
 }
+
+
+/* Базовые стили для .list_section и его элементов */
+.list_section {
+    background: #efeee8;
+    padding: 30px 0;
+}
+
+.list_section h2 {
+    text-transform: uppercase;
+    font-family: muller_bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #556378;
+    text-align: center;
+}
+
+.row_list_dead {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.list_section .row_list_dead {
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.list_section .row_list_dead .list_item_wrap {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.list_section .list_item {
+    display: flex;
+    margin-bottom: 10px;
+    width: 80%;
+    background: #556378;
+    border-radius: 15px;
+    flex-direction: row;
+    padding: 20px 0;
+}
+
+.list_section .list_item .img_block img {
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.list_section .list_item .list_title {
+    width: 30%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list_section .list_item .list_title h4 {
+    font-size: 20px;
+    color: #edc08f;
+    line-height: 1.2;
+    font-family: muller_bold;
+}
+
+.list_section .list_item .list_title h4 a {
+    color: #edc08f;
+}
+
+.list_section .list_item .list_title .info {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    color: #fff;
+    padding-right: 30px;
+    justify-content: center;
+}
+
+.list_section .list_item .list_title .memory {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.list_section .list_item .list_title .memory img {
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(500%);
+}
+
+.list_section .list_item .list_title .memory p {
+    line-height: 30px;
+    margin-left: 12px;
+    font-size: 14px;
+    display: flex;
+    font-family: muller_med;
+    color: #fff;
+}
+
+.list_section .list_item .img_block {
+    margin-left: -62px;
+}
+
+.list_section .list_desc {
+    padding-left: 15px;
+    padding-right: 30px;
+    width: 70%;
+    color: #ecf0f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.list_section .list_desc p {
+    line-height: 1.2;
+    font-size: 15px;
+    color: #e2e7ed;
+    font-family: muller_light;
+}
+
+.list_section .list_desc .person_footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list_section .person_footer .footer_info:first-child {
+    margin-right: 40px;
+}
+
+.list_section .person_footer .footer_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.list_section .person_footer h6 {
+    font-size: 16px;
+    font-family: muller_bold;
+    margin-bottom: 4px;
+    color: #ecf0f5;
+}
+
+.list_section .person_footer .footer_info p {
+    color: #aab1bc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list_section .arrow_down {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.list_section .arrow_down img {
+    width: 32px;
+}
+
+/* Адаптация для экранов меньше 991px */
+@media (max-width: 991px) {
+    .list_section .list_item {
+        flex-direction: column; /* Вертикальное расположение */
+        align-items: center; /* Центрирование элементов */
+        text-align: center; /* Текст по центру */
+        padding: 20px; /* Уменьшаем отступы */
+    }
+
+    .list_section .list_item .img_block {
+        margin-left: 0; /* Убираем сдвиг */
+        margin-bottom: 20px; /* Отступ снизу */
+    }
+
+    .list_section .list_item .list_title {
+        width: 100%; /* Занимает всю ширину */
+        padding-left: 0; /* Убираем отступ слева */
+    }
+
+    .list_section .list_item .list_desc {
+        width: 100%; /* Занимает всю ширину */
+        padding-left: 0; /* Убираем отступ слева */
+        padding-right: 0; /* Убираем отступ справа */
+    }
+
+    .list_section .list_item .list_title .info {
+        justify-content: center; /* Центрирование */
+    }
+
+    .list_section .list_item .list_title .memory {
+        margin-right: 20px; /* Уменьшаем отступ */
+    }
+}
+
+/* Адаптация для экранов меньше 575px */
+@media (max-width: 575px) {
+    .list_section .list_item {
+        width: 100vw;
+        border-radius: 0px;
+        margin-left:-14.7cap;
+    }
+
+    .list_section .list_item .list_title h4 {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+
+    .list_section .list_item .list_desc p {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+
+    .list_section .person_footer h6 {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+
+    .list_section .person_footer .footer_info p {
+        font-size: 12px; /* Уменьшаем размер шрифта */
+    }
+}
+
+
+footer {
+    background: #444e5c;
+    padding: 30px 0;
+    position: relative;
+}
+
+.footter_row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Медиа-запросы для адаптации */
+@media (max-width: 575.98px) {
+    .footter_row {
+        margin-right: -10px;
+        margin-left: -10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third_column {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    footer ._container2_m06mi_363 ._second_column_m06mi_2819 {
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .footter_row {
+        margin-right: -12px;
+        margin-left: -12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .footter_row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .footter_row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footter_row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+footer .container .first_column {
+    margin-right: 70px;
+}
+
+footer .logo_block {
+    margin-bottom: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+footer .logo_block img {
+    width: 130px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+footer .container2 .first_column p {
+    color: #efb26f;
+    margin-top: 8px;
+    font-family: muller_light;
+}
+
+footer .logo_block p {
+    color: #ebeff4 !important;
+    font-size: 14px !important;
+}
+
+footer .container2 .first_column .number {
+    color: #efb26f;
+    font-size: 25px;
+    font-family: muller_extrabold;
+    display: block;
+}
+
+footer .container2 .first_column span {
+    color: #ebeff4;
+    font-family: muller_light;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+
+footer .container2 .first_column p {
+    color: #efb26f;
+    margin-top: 8px;
+    font-family: muller_light;
+}
+
+footer .container2 .first_column p a {
+    color: #efb26f;
+}
+
+footer .container2 .second_column {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer .container2 .second_column a {
+    display: block;
+    color: #ebeff4;
+    margin-bottom: 30px;
+    font-family: muller_light, sans-serif;
+}
+
+footer .container2 .third_column .title {
+    font-size: 18px;
+    color: #ebeff4;
+    font-family: muller_bold;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 575.98px) {
+    footer .container2 .second_column {
+        margin-top: 50px;
+        margin-bottom: -50px;
+    }
+
+    .logo_block {
+        margin-left: 30px;
+    }
+
+    .footter_row {
+        margin-left: 5px;
+    }
+
+    .title {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 920px){
+    .footter_row {
+        margin-left: 20px;
+    }
+
+    .third_column {
+        margin-left:20cap;
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 420px){
+    .footter_row {
+        margin-left: 20px;
+    }
+
+    .third_column {
+        margin-left:0px;
+        margin-top: 3%;
+    }
+}

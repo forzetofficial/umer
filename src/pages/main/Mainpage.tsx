@@ -6,6 +6,8 @@ import cloudtop from "../../icons/img_2.png";
 import back from "../../icons/img_7.png";
 import people from "../../icons/img_3.png";
 import slide from "../../icons/slide-down-arrow.svg";
+import foto from "../../icons/OSJMqJS5GyYhn2Qg4mxT6O69obTlH7.png";
+import down from "../../icons/down-arrow.svg";
 
 export function MainPage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -136,6 +138,203 @@ export function MainPage() {
                         </a>
                     </div>
                 </section>
+                <section className={styles.list_section}>
+                    <div className={styles.container2}>
+                        <h2>Новые страницы памяти</h2>
+                        <div className={styles.row_list_dead} id="list_dead">
+                            <div className={styles.list_item_wrap}>
+                                <div className={styles.list_item}>
+                                    <div className={styles.img_block}>
+                                        <img src={foto}></img>
+                                    </div>
+                                    <div className={styles.list_title}>
+                                        <h4>
+                                            <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/poegle-georgiy-aleksandrovich-20-03-1967-12-01-2006">Поэгле Георгий Александрович</a>
+                                        </h4>
+                                        <div className={styles.info}>
+                                            <div className={styles.memory}>
+                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <p>25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.list_desc}>
+                                        <div className={styles.person_desc}>
+                                            <p>Георгий Александрович был человеком непростой судьбы. Немалую часть жизни он проработал машинистом московского метрополитена, самозабвенно трудясь на благо жителей столиц...</p>
+                                        </div>
+                                        <div className={styles.person_footer}>
+                                            <div className={styles.footer_info}>
+                                                <h6>Почил(a)</h6>
+                                                <p>12.01.2006</p>
+                                            </div>
+                                            <div className={styles.footer_info}>
+                                                <h6>Место</h6>
+                                                <p>Москва</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.list_item}>
+                                    <div className={styles.img_block}>
+                                        <img src={foto}></img>
+                                    </div>
+                                    <div className={styles.list_title}>
+                                        <h4>
+                                            <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/poegle-georgiy-aleksandrovich-20-03-1967-12-01-2006">Поэгле Георгий Александрович</a>
+                                        </h4>
+                                        <div className={styles.info}>
+                                            <div className={styles.memory}>
+                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <p>25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.list_desc}>
+                                        <div className={styles.person_desc}>
+                                            <p>Георгий Александрович был человеком непростой судьбы. Немалую часть жизни он проработал машинистом московского метрополитена, самозабвенно трудясь на благо жителей столиц...</p>
+                                        </div>
+                                        <div className={styles.person_footer}>
+                                            <div className={styles.footer_info}>
+                                                <h6>Почил(a)</h6>
+                                                <p>12.01.2006</p>
+                                            </div>
+                                            <div className={styles.footer_info}>
+                                                <h6>Место</h6>
+                                                <p>Москва</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.list_item}>
+                                    <div className={styles.img_block}>
+                                        <img src={foto}></img>
+                                    </div>
+                                    <div className={styles.list_title}>
+                                        <h4>
+                                            <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/poegle-georgiy-aleksandrovich-20-03-1967-12-01-2006">Поэгле Георгий Александрович</a>
+                                        </h4>
+                                        <div className={styles.info}>
+                                            <div className={styles.memory}>
+                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <p>25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.list_desc}>
+                                        <div className={styles.person_desc}>
+                                            <p>Георгий Александрович был человеком непростой судьбы. Немалую часть жизни он проработал машинистом московского метрополитена, самозабвенно трудясь на благо жителей столиц...</p>
+                                        </div>
+                                        <div className={styles.person_footer}>
+                                            <div className={styles.footer_info}>
+                                                <h6>Почил(a)</h6>
+                                                <p>12.01.2006</p>
+                                            </div>
+                                            <div className={styles.footer_info}>
+                                                <h6>Место</h6>
+                                                <p>Москва</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.list_item}>
+                                    <div className={styles.img_block}>
+                                        <img src={foto}></img>
+                                    </div>
+                                    <div className={styles.list_title}>
+                                        <h4>
+                                            <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/poegle-georgiy-aleksandrovich-20-03-1967-12-01-2006">Поэгле Георгий Александрович</a>
+                                        </h4>
+                                        <div className={styles.info}>
+                                            <div className={styles.memory}>
+                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <p>25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.list_desc}>
+                                        <div className={styles.person_desc}>
+                                            <p>Георгий Александрович был человеком непростой судьбы. Немалую часть жизни он проработал машинистом московского метрополитена, самозабвенно трудясь на благо жителей столиц...</p>
+                                        </div>
+                                        <div className={styles.person_footer}>
+                                            <div className={styles.footer_info}>
+                                                <h6>Почил(a)</h6>
+                                                <p>12.01.2006</p>
+                                            </div>
+                                            <div className={styles.footer_info}>
+                                                <h6>Место</h6>
+                                                <p>Москва</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.list_item}>
+                                    <div className={styles.img_block}>
+                                        <img src={foto}></img>
+                                    </div>
+                                    <div className={styles.list_title}>
+                                        <h4>
+                                            <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/poegle-georgiy-aleksandrovich-20-03-1967-12-01-2006">Поэгле Георгий Александрович</a>
+                                        </h4>
+                                        <div className={styles.info}>
+                                            <div className={styles.memory}>
+                                                <img src="http://xn--h1ahbcdf.xn--p1ai/site/img/candle.png"></img>
+                                                <p>25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.list_desc}>
+                                        <div className={styles.person_desc}>
+                                            <p>Георгий Александрович был человеком непростой судьбы. Немалую часть жизни он проработал машинистом московского метрополитена, самозабвенно трудясь на благо жителей столиц...</p>
+                                        </div>
+                                        <div className={styles.person_footer}>
+                                            <div className={styles.footer_info}>
+                                                <h6>Почил(a)</h6>
+                                                <p>12.01.2006</p>
+                                            </div>
+                                            <div className={styles.footer_info}>
+                                                <h6>Место</h6>
+                                                <p>Москва</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.arrow_down}>
+                            <a href="#/">
+                                <img src={down}></img>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <div className={styles.container2}>
+                        <div className={styles.footter_row}>
+                            <div className={styles.first_column}>
+                                <div className={styles.logo_block}>
+                                    <img src={logo}></img>
+                                    <p>социальный сервис</p>
+                                </div>
+                                <a href="tel:8 800 7754488" className={styles.number}>8 800 7754488</a>
+                                <span>Телефон горячей линии</span>
+                                <p><a className={styles.popup_run} href="#callback">Поддержка 24/7</a> <a className={styles.popup_run} href="#quickly-callback">+</a></p>
+                            </div>
+                            <div className={styles.second_column}>
+                                <a href="/memory-pages">Страницы памяти</a>
+                                <a href="/o-proekte">О проекте</a>
+                                <a href="/pravila">Правила</a>
+                            </div>
+                            <div className={styles.second_column}>
+                                <a href="/agreement">Пользовательское соглашение</a>
+                                <a href="/politika-konfiditsialnosti">Политика конфиденциальности</a>
+                                <a href="/politika-uved">Правила рассылки уведомлений</a>
+                            </div>
+                            <div className={styles.third_column}>
+                                <h2 className={styles.title}>Подписаться на публикации</h2>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
     );
