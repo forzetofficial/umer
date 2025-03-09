@@ -1,0 +1,1009 @@
+body {
+    overflow-x: hidden;
+    font-family: muller_light;
+    overflow-y: scroll; /* Всегда показывать вертикальный скролл */
+    min-height: 100vh; /* Минимальная высота — высота экрана */
+}
+
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainheader {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo p {
+    color: #8c96a4;
+    font-size: 13px;
+}
+
+.menu {
+    margin-right: 34px;
+    display: flex;
+}
+
+.menu a {
+    font-size: 16px;
+    color: #A8B5C8;
+    font-family: muller_light;
+    margin-right: 32px;
+    line-height: 20px;
+    transition: 0.3s;
+}
+
+.menu a:last-child {
+    margin-right: 0;
+}
+
+.search_block {
+    position: relative;
+    display: flex;
+}
+
+.search_block form input {
+    height: 32px;
+    width: 282px;
+    border-radius: 16px;
+    background: #556378;
+    padding-left: 32px;
+    padding-right: 16px;
+    color: #fff;
+}
+
+.search_icon {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    top: 8px;
+}
+
+.search_icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.search_input {
+    padding-left: 40px;
+    height: 32px;
+    width: 100%;
+    max-width: 330px;
+    border-radius: 16px;
+    background: #556378;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+input, input::placeholder, textarea, button, textarea::placeholder, select {
+    font-family: muller_light;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #A8B5C8;
+}
+
+.button_block {
+    display: flex;
+    margin-left: 16px;
+}
+
+.auth:hover {
+    background-color: #6c7b92;
+}
+
+.auth:active {
+    background-color: #3b424b;
+}
+
+.button_block a {
+    display: block;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    background: #556378;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    border-radius: 16px;
+    font-family: muller_light;
+    transition: 0.3s;
+}
+
+.burger, .burger2 {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 23px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.burger span, .burger2 span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #a8b5c8;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.mainbanner {
+    height: 100vh;
+    background: url('../../icons/banner_img.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.mainbanner .container2 {
+    height: 100%;
+}
+
+.container2 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mainbanner .bannercontent {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top: 50%;
+    padding-left: 15px;
+    width: 50%;
+    transform: translate(0, -50%);
+}
+
+.mainbanner .bannercontent h3 {
+    font-size: 76px;
+    line-height: 1.2;
+    color: #fff;
+    font-family: muller_bold;
+    text-shadow: 0px 3px 15px rgba(41, 44, 57, .2);
+    margin-bottom: 85px;
+}
+
+.mainbanner .bannercontent h4 {
+    font-size: 49px;
+    color: #FEC88C;
+    margin-bottom: 28px;
+    font-family: muller_light;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1290px) {
+    .mainbanner .bannercontent h3 {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+
+    .mainbanner .bannercontent h4 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1290px) {
+    .search_block form input {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 991px) {
+    .mainbanner {
+        padding-bottom: 60px;
+    }
+
+    .mainbanner .bannercontent {
+        text-align: center;
+        position: relative;
+        transform: unset;
+        top: unset;
+        left: unset;
+        padding-top: 120px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .mainbanner .bannercontent h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .mainbanner .bannercontent h4 {
+        font-size: 24px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 15px;
+    }
+
+    .menu.active a {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .search_block, .button_block {
+        display: none;
+    }
+
+    .row {
+        margin: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .mainbanner {
+        padding-bottom: 40px;
+    }
+
+    .mainbanner .bannercontent {
+        padding-top: 80px;
+    }
+
+    .mainbanner .bannercontent h3 {
+        font-size: 32px;
+    }
+
+    .mainbanner .bannercontent h4 {
+        font-size: 20px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .burger2 {
+        display: flex;
+        margin: 0;
+    }
+
+    .logo p {
+        font-size: 12px;
+    }
+}
+
+
+/* Стили для текста "В трудную минуту вместе" */
+.mainbanner .bannercontent h3 {
+    font-size: 59px;
+    line-height: 1.2;
+    color: #fff; 
+    font-family: muller_bold; 
+    text-shadow: 0px 3px 15px rgba(41, 44, 57, .2);
+    margin-bottom: 85px;
+    font-weight: bold;
+}
+
+/* Адаптивные стили для текста */
+@media (max-width: 1290px) {
+    .mainbanner .bannercontent h3 {
+        font-size: 55px; 
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .mainbanner .bannercontent h3 {
+        font-size: 40px; 
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .mainbanner .bannercontent h3 {
+        font-size: 32px; 
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container2 {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container2 {
+        width: 720px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container2 {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container2 {
+        max-width: 1140px;
+    }
+}
+
+.container2 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 1200px; /* Такая же максимальная ширина, как у .container */
+}
+
+/* Медиа-запросы для .container2 */
+@media (max-width: 1290px) {
+    .container2 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container2 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container2 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container2 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/* Стили для кнопок */
+.main_buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 85px;
+}
+
+.main_button {
+    width: 380px;
+    height: 67px;
+    border-radius: 142px;
+    position: relative;
+    margin-bottom: 15px;
+    background-color: rgba(115, 125, 139, 0.3);
+    transition: 0.3s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main_button a {
+    display: flex !important;
+    width: calc(100% - 20px);
+    height: 56px;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 3;
+    font-family: muller_bold;
+    font-size: 20px;
+    color: #DFDFDF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.main_button a .main_btn_img {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    background-color: rgba(115, 125, 139, 1);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main_button a .first_text {
+    position: absolute;
+    left: 70px;
+    transition: 0.3s;
+}
+
+.main_button a .slide_text {
+    position: absolute;
+    left: -159.031px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* Анимация при наведении */
+.main_button:hover a .first_text {
+    left: -159.031px;
+    opacity: 0;
+}
+
+.main_button:hover a .slide_text {
+    left: 70px;
+    opacity: 1;
+}
+
+/* Адаптивные стили для жёлтой кнопки */
+/* Стили для жёлтой кнопки */
+.main_button_main_btn {
+    cursor: pointer;
+    background-color: #E2A562;
+    border-radius: 142px; 
+    width: 380px; 
+    height: 67px; 
+    position: relative;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    overflow: hidden; 
+    box-shadow: 0px 0px 10px 3px rgba(230, 132, 24, 0);
+}
+
+.main_btn_img_siblings {
+    background-image: url('http://xn--h1ahbcdf.xn--p1ai/site/img/relations.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #FDC689;
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-left: -10px;
+    transition: 0.3s;
+}
+
+.main_btn_img_siblings:hover {
+    width: 320px;
+    background-position: left;
+    border-radius: 140px;
+}
+
+.main_button_main_btn a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    color: #fff; 
+    font-family: muller_bold;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 20px; 
+    position: relative;
+    z-index: 2;
+}
+
+.main_button_main_btn a .main_btn_img {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    background-color: rgba(115, 125, 139, 1); /* Цвет иконки */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main_button_main_btn a .first_text {
+    position: absolute;
+    left: 70px;
+    transition: 0.3s;
+    white-space: nowrap;
+    top: 25px; 
+}
+
+.main_button_main_btn a .slide_text {
+    position: absolute;
+    left: -159.031px;
+    opacity: 0;
+    transition: 0.3s;
+    white-space: nowrap; 
+    top: 25px; 
+}
+
+/* Анимация при наведении */
+.main_button_main_btn:hover a .first_text {
+    left: -159.031px;
+    opacity: 0;
+}
+
+.main_button_main_btn:hover a .slide_text {
+    left: 80px;
+    opacity: 1;
+}
+
+/* Адаптивные стили для жёлтой кнопки */
+@media (max-width: 1290px) {
+    .main_button_main_btn {
+        width: 340px;
+    }
+
+    .main_button_main_btn a {
+        font-size: 18px;
+        padding-left: 15px; /* Уменьшаем отступ слева */
+    }
+
+    .main_button_main_btn a .slide_text {
+        left: -140px; /* Сдвигаем текст для анимации */
+    }
+}
+  
+
+/* Адаптивные стили для кнопок */
+@media (max-width: 1290px) {
+    .main_button {
+        width: 340px;
+    }
+
+    .main_buttons .main_button a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .mainbanner .bannercontent a {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+.mainbanner .person {
+    position: absolute;
+    right: -400px;
+    top: 0;
+    width: 100vh; 
+    height: 100vh;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 40;
+    background-color: rgba(186, 191, 200, 0.2);
+}
+
+/* Медиа-запросы для адаптации .person */
+@media (max-width: 1290px) {
+    .mainbanner .person {
+        width: 95vh;
+        height: 90vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mainbanner .person {
+        top: 40%;
+        left: 50%;
+        width: 90vh;
+        height: 90vh;
+        transform: translate(-50%, -50%);
+        right: unset;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) and (min-height: 890px) {
+    .mainbanner .person {
+        width: 65vh;
+        height: 65vh;
+        right: -80px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .mainbanner .person {
+        width: 70vh;
+        height: 70vh;
+        right: -50px; 
+    }
+}
+
+
+@media (max-width: 575px) {
+    .mainbanner .person {
+        position: relative;
+        top: unset;
+        left: 50%;
+        width: 100vw; 
+        height: 100vw;
+        transform: translateX(-50%);
+        right: unset;
+        margin: 0 auto;
+        margin-top: -30px;
+        border-radius: 50%;
+    }
+}
+
+.mainbanner .person .black_oval {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 10;
+    background-color: rgba(234, 234, 234, 0.8);
+}
+
+.mainbanner .person .white_oval {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 82%;
+    height: 82%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    animation: oval 2s ease-in infinite;
+    will-change: width, height;
+    background-color: rgba(238, 246, 254, 0.53);
+}
+
+@keyframes oval {
+    0% {
+        width: 82%;
+        height: 82%;
+    }
+    50% {
+        width: 90%;
+        height: 90%;
+    }
+    100% {
+        width: 82%;
+        height: 82%;
+    }
+}
+
+.mainbanner .person .clouds_top {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 200%;
+    height: 50%;
+    border-radius: 50%;
+    z-index: 25;
+    transform: translateX(-50%);
+    animation: clouds_animate1 10s linear infinite;
+    will-change: left;
+}
+
+.mainbanner .person .clouds_bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    border-radius: 50%;
+    z-index: 25;
+    animation: clouds_animate2 10s linear infinite;
+    will-change: right;
+}
+
+.mainbanner .person .clouds_top .clouds_img_clouds_top_img1, .main_banner .person .clouds_bottom .clouds_bottom_img1 {
+    left: 0;
+}
+
+.mainbanner .person .clouds_top .clouds_img_clouds_top_img1, .main_banner .person .clouds_bottom .clouds_img {
+    width: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.mainbanner .person .clouds_top .clouds_img_clouds_top_img2, .main_banner .person .clouds_bottom .clouds_bottom_img1 {
+    right: 0;
+}
+
+.mainbanner .person .clouds_top .clouds_img_clouds_top_img2, .main_banner .person .clouds_bottom .clouds_img {
+    width: 50%;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes clouds_animate1 {
+    0% {
+        left: 50%; /* Начальная позиция */
+    }
+    50% {
+        left: 30%; /* Сдвиг влево */
+    }
+    100% {
+        left: 50%; /* Возврат в исходную позицию */
+    }
+}
+
+@keyframes clouds_animate2 {
+    0% {
+        transform: translateX(-50%) translateY(0); /* Начальная позиция */
+    }
+    50% {
+        transform: translateX(-30%) translateY(0); /* Сдвиг вверх */
+    }
+    100% {
+        transform: translateX(-50%) translateY(0); /* Возврат в исходную позицию */
+    }
+}
+
+.bg_person {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+    
+}
+
+.bg_person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполнение контейнера с сохранением пропорций */
+    object-position: center; /* Центрируем изображение */
+}
+
+.mainbanner .person .user {
+    width: 150px;
+    position: absolute;
+    opacity: 0;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    animation: visible_user 12s ease-in-out infinite;
+    will-change: opacity;
+}
+
+.mainbanner .person .user img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover; /* Заполнение контейнера с сохранением пропорций */
+    object-position: center; /* Центрируем изображение */
+}
+
+@keyframes visible_user {
+    0% {
+        opacity: 0; /* Начальное состояние: элемент невидим */
+    }
+    40% {
+        opacity: 1; /* Появление элемента */
+    }
+    60% {
+        opacity: 1; /* Элемент остаётся видимым */
+    }
+    100% {
+        opacity: 0; /* Исчезновение элемента */
+    }
+}
+
+.mainbanner .features_list {
+    position: absolute;
+    bottom: 50px; /* Опускаем ниже */
+    left: 25%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 300;
+}
+
+.mainbanner .features_list .feature_item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 26%;
+    margin-top: 10px;
+}
+
+.mainbanner .features_list .feature_item h4 {
+    color: #fff;
+    position: relative;
+    font-size: 32px;
+    font-family: muller_bold;
+    margin-bottom: 16px;
+}
+
+.mainbanner .features_list .feature_item h4:after {
+    content: '';
+    position: absolute;
+    left: 45px;
+    right: 45px;
+    bottom: -7px;
+    background: #fec88c;
+    height: 1px;
+}
+
+.mainbanner .features_list .feature_item p {
+    font-size: 16px;
+    color: #fec88c;
+    font-family: muller_light;
+    line-height: 1.25;
+}
+
+.mainbanner .features_list .feature_item p span {
+    font-family: muller_bold;
+}
+
+@media (max-width: 991px) {
+    .mainbanner .features_list {
+        position: relative;
+        bottom: unset;
+        margin-top: 100px; /* Опускаем ниже на маленьких экранах */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .mainbanner .features_list .feature_item p {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+    .mainbanner .features_list .feature_item h4:after {
+        content: '';
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: -7px;
+        height: 1px;
+    }
+
+    .mainbanner .features_list .feature_item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .mainbanner .features_list {
+        width: 95%;
+        margin-top: 80px; /* Меньше отступ на очень маленьких экранах */
+    }
+}
+
+@media (max-width: 575px) {
+    .mainbanner .features_list {
+        flex-direction: column;
+        margin-top: 60px; /* Ещё меньше отступ на мобильных устройствах */
+        width: 100%;
+    }
+}
+
+@media (max-height: 900px) {
+    .mainbanner .features_list {
+        position: relative;
+        bottom: unset;
+        padding-bottom: 40px;
+        margin-top: 20px; /* Опускаем ниже на экранах с малой высотой */
+    }
+}
+
+@media (max-height: 900px) {
+    .mainbanner .container, .mainbanner {
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .mainbanner .container, .mainbanner {
+        height: auto;
+    }
+}
+@media (max-width: 575px) {
+    .mainbanner {
+        height: auto;
+    }
+}
+
+.main_banner_scroll {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 15px;
+    border-radius: 15px 15px 0px 0px;
+    position: absolute;
+    top: calc(100% - 30px);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 99;
+}
