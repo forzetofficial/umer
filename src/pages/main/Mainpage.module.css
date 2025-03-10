@@ -466,7 +466,7 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
     transition: 0.3s;
 }
 
-.main_button a .main_btn_img {
+.main_button a .main_btn_img_save {
     display: flex;
     width: 56px;
     height: 56px;
@@ -474,9 +474,18 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+    margin-left: 10px;
+    background-image: url('../../icons/save.svg');
     background-color: rgba(115, 125, 139, 1);
     background-position: center center;
     background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+
+.main_button a {
+    width: 380px;
+    height: 67px;
 }
 
 .main_button a .first_text {
@@ -496,6 +505,13 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
 .main_button:hover a .first_text {
     left: -159.031px;
     opacity: 0;
+}
+
+.second_link_button_popup_run_button:hover .main_btn_img_save {
+    width: 350px;
+    background-image: url('../../icons//heart_white_ico.svg');
+    background-position:20px;
+    border-radius: 140px;
 }
 
 .main_button:hover a .slide_text {
@@ -532,12 +548,6 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
     margin-right: 15px;
     margin-left: -10px;
     transition: 0.3s;
-}
-
-.main_btn_img_siblings:hover {
-    width: 320px;
-    background-position: left;
-    border-radius: 140px;
 }
 
 .main_button_main_btn a {
@@ -585,11 +595,20 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
     top: 25px; 
 }
 
+
 /* Анимация при наведении */
 .main_button_main_btn:hover a .first_text {
     left: -159.031px;
     opacity: 0;
 }
+
+.main_button_main_btn:hover .main_btn_img_siblings {
+    width: 350px;
+    background-image: url('../../icons//heart_white_ico.svg');
+    background-position:20px;
+    border-radius: 140px;
+}
+
 
 .main_button_main_btn:hover a .slide_text {
     left: 80px;
@@ -1255,10 +1274,6 @@ footer {
     .third_column {
         margin-left: 0px;
         text-align: center;
-    }
-
-    footer ._container2_m06mi_363 ._second_column_m06mi_2819 {
-
     }
 }
 
