@@ -9,6 +9,7 @@ import slide from "../../icons/slide-down-arrow.svg";
 import foto from "../../icons/OSJMqJS5GyYhn2Qg4mxT6O69obTlH7.png";
 import down from "../../icons/down-arrow.svg";
 import candle from "../../icons/candle.png";
+import peopleup from "../../icons/KHyVgUqyj94NDVl75OgGOdIuOdZdXL.png";
 
 
 export function MainPage() {
@@ -28,6 +29,29 @@ export function MainPage() {
         window.addEventListener('resize', updatePlaceholder);
         return () => {
             window.removeEventListener('resize', updatePlaceholder);
+        };
+    }, []);
+
+    useEffect(() => {
+        const scrollButton = document.getElementById('scrollButton');
+
+        if (scrollButton) {
+            scrollButton.addEventListener('click', (event) => {
+                event.preventDefault(); 
+                const targetSection = document.getElementById('news-scroll');
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth', 
+                        block: 'start',     
+                    });
+                }
+            });
+        }
+        return () => {
+            if (scrollButton) {
+                scrollButton.removeEventListener('click', () => {});
+            }
         };
     }, []);
 
@@ -135,9 +159,116 @@ export function MainPage() {
                                 <p><span>Добавлено страниц памяти</span> о почивших</p>
                             </div>
                         </div>
-                        <a href="#news-scroll" className={styles.main_banner_scroll}>
+                        <a href="#news-scroll" className={styles.main_banner_scroll} id="scrollButton">
                             <img src={slide} alt=""></img>
                         </a>
+                    </div>
+                </section>
+                <section className={styles.person_section} id="news-scroll">
+                    <div className={styles.container2}>
+                        <div className={styles.row_person_slider}>
+                            <div className={styles.flickity_viewport}>
+                                <div className={styles.flickity_slider}>
+                                    <div className={styles.top_person}>
+                                        <div className={styles.person_item}>
+                                            <div className={styles.img_block}>
+                                                <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/oleg-dmitriev-26-04-1970-11-07-2019">
+                                                    <img src={peopleup} alt="Олег Дмитриев" />
+                                                </a>
+                                            </div>
+                                            <div className={styles.person_info}>
+                                                <div className={styles.info_row}></div>
+                                                <div className={styles.track}></div>
+                                                <div className={styles.person_desc}>
+                                                    <h4>
+                                                        <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/oleg-dmitriev-26-04-1970-11-07-2019">Олег Дмитриев</a>
+                                                    </h4>
+                                                    <p>11 июля, в Петербурге стало известно, что театральный мир потерял талантливого режиссера и актера Олега Дмитриева. Внезапная смерть поразила коллег и друзей артиста, так как он умер в возрасте всего 49 лет.- Смерть просто не может перестать приходить за лучшими из нас. Теперь, Олег… Когда мы были одноклассниками в теат...</p>
+                                                </div>
+                                                <div className={styles.person_footer}>
+                                                    <div className={styles.footer_info}>
+                                                        <h6>Почил(а)</h6>
+                                                        <p>11.07.2019</p>
+                                                    </div>
+                                                    <div className={styles.footer_info}>
+                                                        <h6>Место</h6>
+                                                        <p>Санкт-Петербург</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.top_person}>
+                                        <div className={styles.person_item}>
+                                            <div className={styles.img_block}>
+                                                <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/oleg-dmitriev-26-04-1970-11-07-2019">
+                                                    <img src={peopleup} alt="Олег Дмитриев" />
+                                                </a>
+                                            </div>
+                                            <div className={styles.person_info}>
+                                                <div className={styles.info_row}></div>
+                                                <div className={styles.track}></div>
+                                                <div className={styles.person_desc}>
+                                                    <h4>
+                                                        <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/oleg-dmitriev-26-04-1970-11-07-2019">Олег Дмитриев</a>
+                                                    </h4>
+                                                    <p>11 июля, в Петербурге стало известно, что театральный мир потерял талантливого режиссера и актера Олега Дмитриева. Внезапная смерть поразила коллег и друзей артиста, так как он умер в возрасте всего 49 лет.- Смерть просто не может перестать приходить за лучшими из нас. Теперь, Олег… Когда мы были одноклассниками в теат...</p>
+                                                </div>
+                                                <div className={styles.person_footer}>
+                                                    <div className={styles.footer_info}>
+                                                        <h6>Почил(а)</h6>
+                                                        <p>11.07.2019</p>
+                                                    </div>
+                                                    <div className={styles.footer_info}>
+                                                        <h6>Место</h6>
+                                                        <p>Санкт-Петербург</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.top_person}>
+                                        <div className={styles.person_item}>
+                                            <div className={styles.img_block}>
+                                                <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/oleg-dmitriev-26-04-1970-11-07-2019">
+                                                    <img src={peopleup} alt="Олег Дмитриев" />
+                                                </a>
+                                            </div>
+                                            <div className={styles.person_info}>
+                                                <div className={styles.info_row}></div>
+                                                <div className={styles.track}></div>
+                                                <div className={styles.person_desc}>
+                                                    <h4>
+                                                        <a href="http://xn--h1ahbcdf.xn--p1ai/memory-page/oleg-dmitriev-26-04-1970-11-07-2019">Олег Дмитриев</a>
+                                                    </h4>
+                                                    <p>11 июля, в Петербурге стало известно, что театральный мир потерял талантливого режиссера и актера Олега Дмитриева. Внезапная смерть поразила коллег и друзей артиста, так как он умер в возрасте всего 49 лет.- Смерть просто не может перестать приходить за лучшими из нас. Теперь, Олег… Когда мы были одноклассниками в теат...</p>
+                                                </div>
+                                                <div className={styles.person_footer}>
+                                                    <div className={styles.footer_info}>
+                                                        <h6>Почил(а)</h6>
+                                                        <p>11.07.2019</p>
+                                                    </div>
+                                                    <div className={styles.footer_info}>
+                                                        <h6>Место</h6>
+                                                        <p>Санкт-Петербург</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button className={styles.flickity_button} type="button" aria-label="Previous">
+                                <svg className={styles.flickity_button_icon} viewBox="0 0 100 100">
+                                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" className={styles.arrow}></path>
+                                </svg>
+                            </button>
+                            <button className={styles.flickity_button_next} type="button" aria-label="Previous">
+                                <svg className={styles.flickity_button_icon} viewBox="0 0 100 100">
+                                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" className={styles.arrow} transform="translate(100, 100) rotate(180) "></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </section>
                 <section className={styles.list_section}>
