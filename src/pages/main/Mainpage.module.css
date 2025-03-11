@@ -545,7 +545,6 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
     margin-left: -10px;
     transition: 0.3s;
 }
@@ -629,8 +628,35 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
     .main_button_main_btn a .slide_text {
         left: -140px; /* Сдвигаем текст для анимации */
     }
+
+    .main_button a .main_btn_img_save {
+        margin-left: 0px;
+    }
+    
+    .main_buttons .second_link_button_popup_run_button {
+        padding-left: 15px;
+        
+        width: 340px;
+    }
+
+    .main_buttons .second_link_button_popup_run_button .main_btn_img_save {
+        margin-left: -10px;
+    }
+
+    .main_button a .first_text {
+        margin-left: 0px;
+    }
+
+    .main_button a .slide_text {
+        margin-left: 20px;
+    }
+
+    .main_button_main_btn:hover .main_btn_img_siblings {
+        width: 310px;
+    }
 }
-  
+
+
 
 /* Адаптивные стили для кнопок */
 @media (max-width: 1290px) {
@@ -647,6 +673,18 @@ input, input::placeholder, textarea, button, textarea::placeholder, select {
     .mainbanner .bannercontent a {
         display: block;
         margin: 0 auto;
+    }
+
+    .main_btn_img_siblings {
+        margin-top: 5px;
+    }
+
+    .main_button_main_btn .main_link_button_popup_run_button .first_text {
+        margin-top: -3px;
+    }
+
+    .main_button_main_btn .main_link_button_popup_run_button .slide_text {
+        margin-top: -3px;
     }
 }
 
@@ -1514,8 +1552,6 @@ footer .container2 .third_column .title {
     justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали */
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 .flickity_viewport {
@@ -1556,6 +1592,14 @@ footer .container2 .third_column .title {
 
     /* Скрываем третий .top_person */
     .top_person:nth-child(3) {
+        display: none;
+    }
+
+    .flickity_button_next {
+        display: none;
+    }
+
+    .flickity_button {
         display: none;
     }
 
